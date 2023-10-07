@@ -21,7 +21,7 @@ type Activity = {
   key: string;
 };
 
-export default function RandomActivityPage() {
+export default function Page() {
   const [activity, setActivity] = useState<Activity | null>(null);
 
   const fetchRandomActivity = useCallback(async () => {

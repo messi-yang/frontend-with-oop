@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { ActivityApi } from "./activity-api";
 import { ActivityModel } from "./activity-model";
 
-export default function RandomActivityPage() {
+export default function Page() {
   const activityApi = useMemo(() => ActivityApi.new(), []);
   const [activity, setActivity] = useState<ActivityModel | null>(null);
 
